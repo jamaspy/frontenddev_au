@@ -1,4 +1,4 @@
-import { ArrowDownTrayIcon, EnvelopeOpenIcon } from "@heroicons/react/24/solid";
+import { EnvelopeOpenIcon, PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import React, { useEffect } from "react";
 import Button from "./Button";
 
@@ -19,20 +19,20 @@ const WorkSection = () => {
 
   return (
     <div className="border rounded-lg overflow-hidden flex flex-col p-4 w-full mb-4 bg-white">
-      <div className="flex flex-row mb-8 ">
-        <EnvelopeOpenIcon className="h-6 w-6 text-slate-400 mr-2" />
-        <h3 className="text-xl">Contact</h3>
+      <div className="flex flex-row mb-8 items-center">
+        <EnvelopeOpenIcon className="h-6 w-6 text-slate-400 mr-4" />
+        <h3 className="text-xl">Contact Me</h3>
       </div>
       <input
         type="text"
-        placeholder="Name"
+        placeholder="Your Email"
         className="focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:ring-offset-sky-300 border rounded-lg p-2 mb-4 w-full"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       {isOpen && (
         <textarea
-          placeholder="Message"
+          placeholder="Your Message"
           rows={5}
           className="focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:ring-offset-sky-300 border rounded-lg p-2 mb-4 w-full"
           value={message}
@@ -46,7 +46,7 @@ const WorkSection = () => {
         }`}
         disabled={isDisabled}
       >
-        <ArrowDownTrayIcon className="h-6 w-6 text-white mr-2" />
+        <PaperAirplaneIcon className="h-6 w-6 text-white mr-2 " />
         Send
       </Button>
     </div>

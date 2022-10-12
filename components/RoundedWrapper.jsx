@@ -6,7 +6,11 @@ const RoundedWrapper = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <div className="relative rounded-t-3xl min-h-screen overflow-hidden flex flex-col bg-slate-50 shadow rounded-b-3xl">
+    <div
+      className={`relative rounded-t-3xl min-h-screen overflow-hidden flex flex-col ${
+        !isOpen ? "bg-slate-50 shadow" : "bg-transparent shadow-none"
+      }  rounded-b-3xl`}
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="h-12 w-12 rounded-full absolute top-8 right-8 z-10 bg-white flex items-center justify-center"
@@ -20,11 +24,11 @@ const RoundedWrapper = ({ children }) => {
         enter="transform transition duration-[400ms]"
         enterFrom="opacity-0 rotate-[-120deg] scale-50"
         enterTo="opacity-100 rotate-0 scale-100"
-        leave="transform duration-200 transition ease-in-out"
+        leave="transform duration-100 transition ease-in-out"
         leaveFrom="opacity-100 rotate-0 scale-100 "
         leaveTo="opacity-0 scale-95 "
       >
-        <div className="flex items-center justify-center flex-col min-h-[97vh] w-full rounded-3xl bg-gradient-to-b from-cyan-500 to-blue-50 shadow-lg opacity-75 ">
+        <div className="flex items-center justify-center flex-col min-h-[97vh] w-full rounded-3xl bg-gradient-to-b from-cyan-500 to-blue-50 opacity-75 ">
           <p className="text-white text-4xl mb-8 hover:font-semibold drop-shadow">
             Home
           </p>

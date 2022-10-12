@@ -6,10 +6,10 @@ const IntroSection = () => {
       <div className="flex flex-col">
         <Avatar />
         <h1 className="text-xl font-bold my-4">
-          Frontend web developer, home barista & fulltime dog dad
+          Frontend web developer, home barista & fulltime dog Dad.
         </h1>
       </div>
-      <p>Hi, my name is James</p>
+      <p className="mb-2">Hi, my name is James.</p>
       <p>
         Eiusmod mollit ex ea consectetur eu ea cillum deserunt veniam tempor
         deserunt. Est sint amet excepteur sunt elit deserunt reprehenderit enim

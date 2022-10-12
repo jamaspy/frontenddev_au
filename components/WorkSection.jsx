@@ -5,8 +5,8 @@ import CompanyLogo from "./CompanyLogo";
 const WorkSection = () => {
   return (
     <div className="border rounded-lg overflow-hidden flex flex-col p-4 w-full mb-4 bg-white">
-      <div className="flex flex-row mb-8 ">
-        <BriefcaseIcon className="h-6 w-6 text-slate-400 mr-2" />
+      <div className="flex flex-row mb-8 items-center">
+        <BriefcaseIcon className="h-6 w-6 text-slate-400 mr-4" />
         <h3 className="text-xl">Work</h3>
       </div>
       <CompanyLogo
@@ -27,7 +27,7 @@ const WorkSection = () => {
         position="Frontend Developer"
         date="Mar20 - Jan22"
       />
-      <Button className="mt-4">
+      <Button className="mt-4 hover:bg-sky-600">
         <ArrowDownTrayIcon className="h-6 w-6 text-white mr-2" />
         Download CV
       </Button>

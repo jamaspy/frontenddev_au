@@ -22,15 +22,15 @@ const Hero = ({ title, subtitle }) => {
         quality={100}
         alt="coastal road"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center w-full ">
+      <div className="absolute inset-0 flex flex-col items-center justify-center w-full text-center">
         <h1
           className="text-5xl md:text-8xl text-white"
           style={{ textShadow: "1px 1px 1px #0f172a" }}
         >
-          Company Name
+          a dev & his dog
         </h1>
         <h3
-          className="text-3xl text-white  mt-4"
+          className="text-xl md:text-3xl text-white  mt-4"
           style={{ textShadow: "1px 1px 1px #0f172a" }}
         >
           design | develop | host
