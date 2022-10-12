@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import placeholder from "../public/hero2DataURL.jpg";
 const Hero = ({ title, subtitle }) => {
   return (
     <div>
@@ -14,6 +15,8 @@ const Hero = ({ title, subtitle }) => {
       >
         <Image
           src="/hero2.jpg"
+          placeholder="blur"
+          blurDataURL="/hero2DataURL.jpg"
           layout="fill"
           objectFit="cover"
           objectPosition="top"
